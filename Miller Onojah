@@ -1,0 +1,317 @@
+<a id="top"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller Onojah - A Thoughtful Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('bgg.jpg'); /* Replace with your background image */
+            background-size: 800px 600px;
+            background-color: beige;
+        }
+
+        header, main, footer {
+            margin: 20px;
+        }
+
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Beautiful Font', cursive;
+            color: brown;
+        }
+
+        .message {
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        .love-note {
+            text-align: left;
+            float: left;
+            margin-left: 20px;
+            max-width: 300px;
+            margin-top: 30px;
+        }
+
+        .note {
+            font-style: italic;
+            color: brown;
+        }
+
+        .sweet-notes {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #FF69B4; /* Hot Pink color */
+        }
+
+        .pictures-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+        }
+
+        .picture {
+            flex: 0 0 45%;
+            margin: 10px;
+        }
+
+        .picture img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .video-container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .games {
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .game {
+            margin-bottom: 20px;
+        }
+
+        .game label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #FFD700;
+            opacity: 0.7;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="name">Miller Jacob Onojah</h1>
+        <audio controls autoplay>
+            <source src="best part.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </header>
+
+    <main>
+        <div class="message">
+            <p>To the finest, kindest, and most selfless great chef.</p>
+        </div>
+
+        <div class="love-note">
+            <blockquote class="note">
+                <p>Love is not love which alters when it alteration finds.</p>
+                <footer>William Shakespeare</footer>
+            </blockquote>
+        </div>
+
+        <div class="sweet-notes" id="sweet-note">
+            <!-- This will be dynamically changed -->
+        </div>
+
+        <div class="pictures-container">
+            <div class="picture"><img src="image2.jpg" alt="Image 2"></div>
+            <div class="picture"><img src="image3.jpg" alt="Image 3"></div>
+            <div class="picture"><img src="image4.jpg" alt="Image 4"></div>
+            <div class="picture"><img src="image5.jpg" alt="Image 5"></div>
+        </div>
+
+        <div class="video-container">
+            <video class="video" controls>
+                <source src="video1.mp4" muted controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-container">
+            <video class="video" controls>
+                <source src="video2.mp4" muted controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-container">
+            <video class="video" controls>
+                <source src="video3.mp4" muted controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-container">
+            <video class="video" controls>
+                <source src="video4.mp4" muted controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="games">
+            <!-- Interactive Games -->
+            <div class="game">
+                <h2>Game 1</h2>
+                <p>Wha was the first movie Miller and Ela watched?</p>
+                <label><input type="radio" name="game0" value="Barbie">Barbie</label><br>
+                <label><input type="radio" name="game0" value="Oppenheimer">Oppenheimer</label><br>
+                <label><input type="radio" name="game0" value="Sonic The Hedgehog ">Sonic The Hedgehog</label><br>
+                <label><input type="radio" name="game0" value="Pretty woman">Pretty woman</label><br>
+            </div>
+
+            <div class="game">
+                <h2>Game 2</h2>
+                <p>What's Miller's favorite food?</p>
+                <label><input type="radio" name="game1" value="Pasta">Pasta</label><br>
+                <label><input type="radio" name="game1" value="Pizza">Pizza</label><br>
+                <label><input type="radio" name="game1" value="Sushi">Sushi</label><br>
+                <label><input type="radio" name="game1" value="Burger">Burger</label><br>
+            </div>
+
+            <div class="game">
+                <h2>Game 3</h2>
+                <p>Who is Miller's favorite person?</p>
+                <label><input type="radio" name="game2" value="Ela">Ela</label><br>
+                <label><input type="radio" name="game2" value="John">John</label><br>
+                <label><input type="radio" name="game2" value="Sarah">Sarah</label><br>
+                <label><input type="radio" name="game2" value="David">David</label><br>
+            </div>
+
+            <div class="game">
+    <h2>Game 4</h2>
+    <p>What is the first thing Miller baked for Ela?</p>
+    <label><input type="radio" name="game3" value="Apple Pie">Apple Pie</label><br>
+    <label><input type="radio" name="game3" value="Pasta">Pasta</label><br>
+    <label><input type="radio" name="game3" value="Chocolate Cake">Chocolate Cake</label><br>
+    <label><input type="radio" name="game3" value="Brownies">Brownies</label><br>
+</div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="confetti" id="confetti"></div>
+        <div id="end-message"></div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Changing sweet notes
+            const sweetNotes = [
+                "Life is better with you.",
+                "You are my sunshine on a rainy day.",
+                "Your smile brightens up my world.",
+                "If life is a movie, thenyou're the best part."
+                // Add more sweet notes here
+            ];
+
+            let currentSweetNoteIndex = 0;
+            const sweetNoteElement = document.getElementById('sweet-note');
+
+            function changeSweetNote() {
+                sweetNoteElement.textContent = sweetNotes[currentSweetNoteIndex];
+                currentSweetNoteIndex = (currentSweetNoteIndex + 1) % sweetNotes.length;
+                setTimeout(changeSweetNote, 5000); // Change sweet note every 5 seconds
+            }
+
+            changeSweetNote();
+
+            // Scrolling pictures
+            const picturesContainer = document.querySelector('.pictures-container');
+
+            function scrollPictures() {
+                const pictures = picturesContainer.querySelectorAll('.picture');
+                picturesContainer.appendChild(pictures[0]);
+                setTimeout(scrollPictures, 3000); // Scroll pictures every 3 seconds
+            }
+
+            scrollPictures();
+
+            // Interactive games
+            const games = document.querySelectorAll('.game');
+
+            games.forEach((game, index) => {
+                game.addEventListener('change', () => {
+                    const inputs = game.querySelectorAll('input');
+                    const correctAnswer = inputs[0].value;
+
+                    inputs.forEach(input => {
+                        if (input.value === correctAnswer) {
+                            input.parentElement.style.color = 'green';
+                        } else {
+                            input.parentElement.style.color = 'red';
+                        }
+                        input.disabled = true;
+                    });
+
+                    if (index === games.length - 1) {
+                        // Display end message and confetti
+                        const endMessage = document.getElementById('end-message');
+                        endMessage.innerHTML = "<h2>Congratulations, you made it to the end!</h2><p>Thank you for participating.</p>";
+
+                        const confetti = document.getElementById('confetti');
+                        const numConfettiPieces = 100;
+
+                        for (let i = 0; i < numConfettiPieces; i++) {
+                            const confettiPiece = document.createElement('div');
+                            confettiPiece.classList.add('confetti-piece');
+                            confettiPiece.style.left = Math.random() * 100 + 'vw';
+                            confettiPiece.style.animationDuration = Math.random() * 3 + 2 + 's';
+                            confetti.appendChild(confettiPiece);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+\<a href="#top">Go to Top</a>
+
+
